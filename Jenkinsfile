@@ -14,6 +14,7 @@ pipeline {
     }
     stage('run') {
       steps {
+        sh 'pwd'
         sh './mvnw spring-boot:run'
       }
     }
