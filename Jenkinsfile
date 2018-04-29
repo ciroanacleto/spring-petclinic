@@ -6,15 +6,9 @@ pipeline {
 
   }
   stages {
-    stage('java') {
+    stage('build') {
       steps {
         sh './mvnw install'
-      }
-    }
-    stage('run') {
-      steps {
-        sh 'pwd'
-        sh './mvnw spring-boot:run'
       }
     }
   }
