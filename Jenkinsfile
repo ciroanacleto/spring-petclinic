@@ -8,8 +8,7 @@ pipeline {
   stages {
     stage('java') {
       steps {
-        sh 'echo $JAVA_HOME'
-        sh './mvnw verify'
+        sh './mvnw install'
       }
     }
     stage('run') {
